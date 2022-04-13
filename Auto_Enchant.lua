@@ -18,7 +18,7 @@ do --//Checks&Functions
 	else
 		BUID = Library.Network.Invoke('Get my Banks')[_G.BankIndex].BUID;
 		BankInfo = Library.Network.Invoke('Get Bank', BUID)
-	end)
+	end
 	function GetPetInfo(uid)
 		for i, v in pairs(Library.Save.Get().Pets) do
 			if v.uid == uid then
